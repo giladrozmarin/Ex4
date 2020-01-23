@@ -27,13 +27,12 @@ node *addNode(node *root, char letter)//add node
 /**
  * This function build the TRIE data structure.
  * */
-int *buildTrie(node *root)
+int buildTrie(node *root)
 {
   int maxLengthWord = 0;//The longest word
   int tempMax = 0;
   int index; //Put the charcter we get in the right index array
   char c = ' ';
-  int i = 0;
   while (scanf("%c", &c) != EOF)
 
   {
@@ -65,7 +64,7 @@ int *buildTrie(node *root)
   }
   root->isEndOfWord = FALSE;
   root->count = 0;
-  return (int)maxLengthWord;
+  return maxLengthWord;
 }
 /*
 * printTrie function get: root adress, char array and empty level

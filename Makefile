@@ -1,5 +1,5 @@
 
-CC=gcc
+CC=clang
 OBJECTS_MAIN=main.o node.o
 FLAGS= -Wall -g -fPIC
 PROGRAMS=frequency

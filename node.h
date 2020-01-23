@@ -23,7 +23,7 @@ typedef struct node
 
 node *newNode();
 node *addNode(node *root, char letter);
-int *buildTrie(node *root);
+int buildTrie(node *root);
 void printTrie(const node *root, char str[], int level); 
 void printTrieR(const node *root, char str[], int level);
 void freeTrie(node *root);
